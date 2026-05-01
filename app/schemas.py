@@ -79,7 +79,7 @@ class RefreshTokenRequest(BaseModel):
 
 class ReviewCreate(BaseModel):
     """
-    Модель для создания и обновления отзывов.
+    Модель для создания и обновления отзыва.
     Используется в POST и PUT запросах.
     """
     product_id: int = Field(..., description="ID товара")
@@ -89,7 +89,7 @@ class ReviewCreate(BaseModel):
 
 class Review(BaseModel):
     """
-    Модель для ответа с данными товара.
+    Модель для ответа с данными отзыва.
     Используется в GET-запросах.
     """
 

@@ -8,8 +8,7 @@ class CategoryCreate(BaseModel):
     Модель для создания и обновления категории.
     Используется в POST и PUT запросах.
     """
-    name: str = Field(..., min_length=3, max_length=50,
-                      description="Название категории (3-50 символов)")
+    name: str = Field(..., min_length=3, max_length=50, description="Название категории (3-50 символов)")
     parent_id: int | None = Field(None, description="ID родительской категории, если есть")
 
 
